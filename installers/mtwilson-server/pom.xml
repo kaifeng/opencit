@@ -61,7 +61,7 @@
                 <dependency>
                     <groupId>com.intel.mtwilson.linux</groupId>
                     <artifactId>monit</artifactId>
-                    <version>5.5</version>
+                    <version>5.9</version>
                     <type>bin</type>
                 </dependency>
                 <dependency>
@@ -275,7 +275,7 @@
                                         <artifactItem>
                                             <groupId>com.intel.mtwilson.linux</groupId>
                                             <artifactId>monit</artifactId>
-                                            <version>5.5</version>
+                                            <version>5.9</version>
                                             <type>bin</type>
                                         </artifactItem>
                                         <!-- Web services -->

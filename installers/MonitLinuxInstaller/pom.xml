@@ -3,7 +3,7 @@
     
     <groupId>com.intel.mtwilson.linux</groupId>
     <artifactId>monit</artifactId>
-    <version>5.5</version>
+    <version>5.9</version>
     
     <packaging>pom</packaging>
     <name>Monit Linux Installer</name>
@@ -45,7 +45,7 @@
                 <dependency>
                     <groupId>com.mmonit</groupId>
                     <artifactId>monit</artifactId>
-                    <version>5.5</version>
+                    <version>5.9</version>
                     <type>tgz</type>
                     <classifier>linux-src</classifier>
                 </dependency>	
@@ -78,11 +78,11 @@
                                         <artifactItem>
                                             <groupId>com.mmonit</groupId>
                                             <artifactId>monit</artifactId>
-                                            <version>5.5</version>
+                                            <version>5.9</version>
                                             <type>tgz</type>
                                             <classifier>linux-src</classifier>
                                             <outputDirectory>${makeself.directory}</outputDirectory>
-                                            <destFileName>monit-5.5-linux-src.tar.gz</destFileName>
+                                            <destFileName>monit-5.9-linux-src.tar.gz</destFileName>
                                         </artifactItem>
                                     </artifactItems>
                                     <overWriteReleases>false</overWriteReleases>
