@@ -62,10 +62,12 @@ public class MleBO {
         if (whiteList.length() != expectedSize) {
             return false;
         }
-        
-        if (whiteList.matches(invalidWhiteList)) {
-            return false;
-        }
+       
+        // bypass invalid whitelist checking for non-TXT environment
+	log.warn("Ignoring invalid whitelist (like all zero or 1).");
+        // if (whiteList.matches(invalidWhiteList)) {
+        //     return false;
+        // }
         if (whiteList.matches(hexadecimalRegEx)) {
             return true;
         } else {

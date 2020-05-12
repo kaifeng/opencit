@@ -1099,9 +1099,12 @@ public class HostBO {
             return false;
         }
 
-        if (modValue.matches(invalidWhiteList)) {
-            return false;
-        }
+        // bypass invalid whitelist checking for non-TXT environment
+        log.warn("Checking all zeros or ones is bypassed, and considered valid now.");
+        // if (modValue.matches(invalidWhiteList)) {
+        //     return false;
+        // }
+
         if (modValue.matches(hexadecimalRegEx)) {
             return true;
         } else {
